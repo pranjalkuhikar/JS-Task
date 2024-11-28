@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.boxes {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e2e2;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+}
+.boxes .box {
+  position: relative;
+  width: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: #fff;
+  padding: 2em;
+}
+.boxes .box .time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.boxes .box .time .avi {
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  padding: 0.4em 0.8em;
+  background-color: rgb(74, 206, 131);
+  border-radius: 1em;
+  border: none;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+.boxes .box .time .hr {
+  font-size: 1em;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: end;
+}
+.boxes .box .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.boxes .box .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.boxes .box .text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.boxes .box .text .name {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.boxes .box .text .profession {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: -1px;
+}
+.boxes .box .text .work {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgb(90, 202, 59);
+}
+.boxes .box .skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.boxes .box .skill .ski {
+  padding: 0.8em 1em;
+  background-color: #fff;
+  border: 2px solid rgba(84, 131, 240, 0.8);
+  font-weight: 700;
+  border-radius: 5em;
+}
+.boxes .box .skill .skil {
+  color: #fff;
+  background-color: rgba(84, 131, 240, 0.8);
+  border: none;
+}
+.boxes .box .des {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.boxes .box .line {
+  text-align: center;
+  width: 20%;
+  border: 1px solid #939393;
+  border-radius: 2em;
+}
+.boxes .box .Stranger {
+  width: 100%;
+  height: 100%;
+  padding: 1em 2em;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(3, 76, 246, 0.7);
+  cursor: pointer;
+}
+.boxes .box .Stranger:active {
+  scale: 0.9;
+}
+.boxes .box .Stranger:hover {
+  color: #fff;
+  background-color: rgba(3, 76, 246, 0.9);
+}
+.boxes .box .friend {
+  width: 100%;
+  height: 100%;
+  padding: 1em 2em;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(3, 246, 84, 0.7);
+  cursor: pointer;
+}
+.boxes .box .friend:active {
+  scale: 0.9;
+}
+.boxes .box .friend:hover {
+  color: #fff;
+  background-color: rgba(3, 246, 133, 0.9);
+}/*# sourceMappingURL=style.css.map */
