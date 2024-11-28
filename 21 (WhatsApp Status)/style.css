@@ -21,7 +21,11 @@ body {
   height: 100vh;
   background-color: #5e5d5d;
 }
-.screen .box {
+.screen .boxes {
+  overflow: hidden;
+  border-radius: 2em;
+}
+.screen .boxes .box {
   height: 50em;
   width: 40em;
   background-color: rgb(111, 237, 172);
@@ -34,7 +38,7 @@ body {
   overflow: auto;
   cursor: pointer;
 }
-.screen .box .row {
+.screen .boxes .box .row {
   width: 100%;
   height: 15%;
   display: flex;
@@ -45,7 +49,7 @@ body {
   border-radius: 1em;
   padding: 1em;
 }
-.screen .box .row img {
+.screen .boxes .box .row img {
   height: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
