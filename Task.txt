@@ -20,6 +20,9 @@ Task
 18. Rendering Card data
 19. Switching on button Click
 20. Event KeyAction
+21. WhatsApp Status
+22. Download Scrollbar
+23. Instagram
 
 11. ⁠Create a Hamburger menu animation
 
