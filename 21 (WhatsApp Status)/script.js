@@ -70,7 +70,6 @@ function Main() {
 Main();
 
 let rows = document.querySelectorAll(".row");
-
 let stateImg = document.querySelector(".state img");
 let state = document.querySelector(".state");
 let btn = document.querySelector("button");

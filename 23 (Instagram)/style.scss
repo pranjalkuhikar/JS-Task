@@ -1,0 +1,292 @@
+@font-face {
+  font-family: coda;
+  src: url("./Fonts/Coda/Coda-Regular.ttf");
+}
+@font-face {
+  font-family: open;
+  src: url("./Fonts/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("./Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: franklin;
+  src: url("./Fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.6em;
+  .header {
+    margin-top: 0.6em;
+    width: 100%;
+    height: 6%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 50%;
+      i {
+        font-size: 2.5em;
+      }
+    }
+    .logoImg {
+      width: 100%;
+      img {
+        width: 60%;
+        height: 100%;
+      }
+    }
+    i {
+      width: 100%;
+      font-size: 1.4em;
+    }
+    .Message {
+      font-size: 1.2em;
+    }
+  }
+  .stories {
+    overflow-x: scroll;
+    padding: 0.2em;
+    height: 30%;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    .story {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 70%;
+      width: 20%;
+      margin: 0.5em;
+      border-radius: 50%;
+
+      img {
+        height: 100%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border: 2px solid rgb(240, 43, 213);
+      }
+      .name {
+        font-size: 0.8em;
+        font-family: franklin;
+        color: #333;
+        white-space: nowrap;
+      }
+    }
+  }
+  .posts {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+    .post {
+      height: fit-content;
+      width: 100%;
+      margin: 1em;
+      border-radius: 10px;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      .user-info {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+        .first {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1em;
+          .profile {
+            height: 100%;
+            width: 15%;
+            aspect-ratio: 1/1;
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+              aspect-ratio: 1/1;
+              object-fit: cover;
+            }
+          }
+          .user {
+            font-size: 0.9em;
+            font-family: franklin;
+            .location {
+              margin-top: 0.3em;
+              font-size: 0.9em;
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+      .main {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1/1;
+          margin-top: 0.4em;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 1em;
+        .counter {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 2em;
+          font-family: roboto;
+          .like {
+            cursor: pointer;
+            &:active {
+              scale: 0.95;
+            }
+            i {
+              font-size: 1.5em;
+              transition: color 0.3s ease;
+              pointer-events: none;
+            }
+          }
+          i {
+            font-size: 1.5em;
+          }
+        }
+        .caption {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1em;
+          font-family: franklin;
+          font-size: 0.8em;
+        }
+        .time-ago {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          font-family: franklin;
+          font-size: 0.75em;
+          opacity: 0.7;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .close-popup {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 2em;
+  }
+}
+
+.ri-heart-fill {
+  color: red;
+}
+
+.like i.ri-heart-fill {
+  color: red;
+}
+
+.message {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 100;
+  font-size: 1.2em;
+  font-family: roboto;
+  .message-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    background-color: #0000002f;
+  }
+}

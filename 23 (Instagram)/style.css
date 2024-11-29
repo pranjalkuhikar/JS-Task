@@ -1,0 +1,292 @@
+@font-face {
+  font-family: coda;
+  src: url("./Fonts/Coda/Coda-Regular.ttf");
+}
+@font-face {
+  font-family: open;
+  src: url("./Fonts/Open_Sans/OpenSans-VariableFont_wdthwght.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("./Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: franklin;
+  src: url("./Fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.screen .header {
+  margin-top: 0.6em;
+  width: 100%;
+  height: 6%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.screen .header .logo {
+  width: 50%;
+}
+.screen .header .logo i {
+  font-size: 2.5em;
+}
+.screen .header .logoImg {
+  width: 100%;
+}
+.screen .header .logoImg img {
+  width: 60%;
+  height: 100%;
+}
+.screen .header i {
+  width: 100%;
+  font-size: 1.4em;
+}
+.screen .header .Message {
+  font-size: 1.2em;
+}
+.screen .stories {
+  overflow-x: scroll;
+  padding: 0.2em;
+  height: 30%;
+  width: 100%;
+  margin-top: 2em;
+  margin-left: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+}
+.screen .stories .story {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  width: 20%;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+.screen .stories .story img {
+  height: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid rgb(240, 43, 213);
+}
+.screen .stories .story .name {
+  font-size: 0.8em;
+  font-family: franklin;
+  color: #333;
+  white-space: nowrap;
+}
+.screen .posts {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.screen .posts .post {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin: 1em;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.screen .posts .post .user-info {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.screen .posts .post .user-info .first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.screen .posts .post .user-info .first .profile {
+  height: 100%;
+  width: 15%;
+  aspect-ratio: 1/1;
+}
+.screen .posts .post .user-info .first .profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.screen .posts .post .user-info .first .user {
+  font-size: 0.9em;
+  font-family: franklin;
+}
+.screen .posts .post .user-info .first .user .location {
+  margin-top: 0.3em;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+.screen .posts .post .main {
+  width: 100%;
+}
+.screen .posts .post .main img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin-top: 0.4em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.screen .posts .post .bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 1em;
+}
+.screen .posts .post .bottom .counter {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2em;
+  font-family: roboto;
+}
+.screen .posts .post .bottom .counter .like {
+  cursor: pointer;
+}
+.screen .posts .post .bottom .counter .like:active {
+  scale: 0.95;
+}
+.screen .posts .post .bottom .counter .like i {
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+.screen .posts .post .bottom .counter i {
+  font-size: 1.5em;
+}
+.screen .posts .post .bottom .caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  font-family: franklin;
+  font-size: 0.8em;
+}
+.screen .posts .post .bottom .time-ago {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: franklin;
+  font-size: 0.75em;
+  opacity: 0.7;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.popup img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popup .close-popup {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 2em;
+}
+
+.ri-heart-fill {
+  color: red;
+}
+
+.like i.ri-heart-fill {
+  color: red;
+}
+
+.message {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 100;
+  font-size: 1.2em;
+  font-family: roboto;
+}
+.message .message-header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.1843137255);
+}/*# sourceMappingURL=style.css.map */
