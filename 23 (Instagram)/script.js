@@ -73,23 +73,23 @@ let user = [
   },
 ];
 
-let posts = document.querySelector(".posts");
+// Stories Function
 let stories = document.querySelector(".stories");
-
-// Story Function
-function Story() {
+function storyFun() {
   let str = "";
   user.forEach((user, index) => {
     str += `<div class="story">
             <img id=${index} src=${user.userprofile} alt=""/>
             <div class="name" >${user.username}</div>
           </div>`;
+    stories.innerHTML = str;
   });
-  stories.innerHTML = str;
 }
+storyFun();
 
-// Post Function
-function Post() {
+// Posts Function
+let posts = document.querySelector(".posts");
+function postFun() {
   let str = "";
   user.forEach((user, index) => {
     str += `<div class="post">
@@ -140,32 +140,26 @@ function Post() {
             <div class="time-ago">${user.timeAgoUploaded} hour ago</div>
           </div>
         </div>`;
+    posts.innerHTML = str;
   });
-  posts.innerHTML = str;
 }
+postFun();
 
-Story();
-Post();
-
-// Story Popup Function
-let story = document.querySelectorAll(".story img");
+// Story Status
 let popup = document.querySelector(".popup");
-let popupImg = document.querySelector(".popup img");
 let close = document.querySelector(".close-popup");
+let popupImg = document.querySelector(".popup img");
 
-story.forEach((story) => {
-  story.addEventListener("click", () => {
-    popupImg.setAttribute("src", user[story.id].userPost);
-    popup.style.display = "flex";
-  });
+stories.addEventListener("click", (event) => {
+  popupImg.setAttribute("src", event.target.src);
+  // popupImg.setAttribute("src", user[event.target.id].userPost);
+  popup.style.display = "flex";
 });
-
 close.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
 // Like Function
-
 posts.addEventListener("click", (event) => {
   if (!user[event.target.id].like) {
     user[event.target.id].like = true;
@@ -174,10 +168,10 @@ posts.addEventListener("click", (event) => {
     user[event.target.id].like = false;
     user[event.target.id].likeCount--;
   }
-  Post();
+  postFun();
 });
 
-// Message Functions
+// // Message Functions
 let Message = document.querySelector(".Message");
 let msg = document.querySelector(".message");
 let back = document.querySelector(".message-header");
