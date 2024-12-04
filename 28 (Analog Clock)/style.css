@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.screen .circle {
+  border: 2px solid #000;
+  width: 40%;
+  height: 65%;
+  border-radius: 50%;
+  position: relative;
+}
+.screen .circle .numbers {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen .circle .numbers .number {
+  height: 100%;
+  font-size: 2em;
+  position: absolute;
+}
+.screen .circle .numbers .one {
+  transform: rotate(30deg);
+}
+.screen .circle .numbers .one span {
+  position: absolute;
+  transform: rotate(330deg);
+}
+.screen .circle .numbers .two {
+  transform: rotate(60deg);
+}
+.screen .circle .numbers .two span {
+  position: absolute;
+  transform: rotate(300deg);
+}
+.screen .circle .numbers .three {
+  transform: rotate(90deg);
+}
+.screen .circle .numbers .three span {
+  position: absolute;
+  transform: rotate(270deg);
+}
+.screen .circle .numbers .four {
+  transform: rotate(120deg);
+}
+.screen .circle .numbers .four span {
+  position: absolute;
+  transform: rotate(240deg);
+}
+.screen .circle .numbers .five {
+  transform: rotate(150deg);
+}
+.screen .circle .numbers .five span {
+  position: absolute;
+  transform: rotate(210deg);
+}
+.screen .circle .numbers .six {
+  transform: rotate(180deg);
+}
+.screen .circle .numbers .six span {
+  position: absolute;
+  transform: rotate(180deg);
+}
+.screen .circle .numbers .seven {
+  transform: rotate(210deg);
+}
+.screen .circle .numbers .seven span {
+  position: absolute;
+  transform: rotate(150deg);
+}
+.screen .circle .numbers .eight {
+  transform: rotate(240deg);
+}
+.screen .circle .numbers .eight span {
+  position: absolute;
+  transform: rotate(120deg);
+}
+.screen .circle .numbers .nine {
+  transform: rotate(270deg);
+}
+.screen .circle .numbers .nine span {
+  position: absolute;
+  transform: rotate(90deg);
+}
+.screen .circle .numbers .ten {
+  transform: rotate(300deg);
+}
+.screen .circle .numbers .ten span {
+  position: absolute;
+  transform: rotate(60deg);
+}
+.screen .circle .numbers .eleven {
+  transform: rotate(330deg);
+}
+.screen .circle .numbers .eleven span {
+  position: absolute;
+  transform: rotate(30deg);
+}
+.screen .circle .numbers .twelve {
+  transform: rotate(360deg);
+}
+.screen .circle .numbers .point {
+  border: 0.5em solid #000;
+  border-radius: 50%;
+}
+.screen .circle .hands {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen .circle .hands .sec {
+  position: relative;
+  height: 40%;
+  width: 3px;
+  border: 3px solid #ff0000;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.screen .circle .hands .min {
+  position: absolute;
+  height: 30%;
+  width: 5px;
+  border: 5px solid #000;
+  border-radius: 50%;
+}
+.screen .circle .hands .hour {
+  position: absolute;
+  height: 25%;
+  width: 10px;
+  border-radius: 50%;
+  border: 10px solid #000;
+}/*# sourceMappingURL=style.css.map */
