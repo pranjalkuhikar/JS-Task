@@ -19,20 +19,20 @@ body {
   align-items: center;
   justify-content: end;
   padding: 2em;
-  .outer {
-    display: flex;
-    gap: 2em;
-    padding: 1em 2em;
-    background-color: #fff;
-    border-radius: 2em;
-    font-family: sans-serif;
-    cursor: pointer;
-    &:hover {
-      background-color: #000;
-      color: #fff;
-      transition: all ease-in 0.3s;
-    }
-  }
+}
+.menu .outer {
+  display: flex;
+  gap: 2em;
+  padding: 1em 2em;
+  background-color: #fff;
+  border-radius: 2em;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.menu .outer:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all ease-in 0.3s;
 }
 
 .inner {
@@ -51,19 +51,19 @@ body {
   transition: all ease-in-out 0.3s;
   top: 0;
   right: -30%;
-  > * {
-    cursor: pointer;
-  }
-  .close {
-    position: absolute;
-    top: 2%;
-    right: 20%;
-    padding: 0.4em;
-    border-radius: 30%;
-    &:hover {
-      background-color: #000;
-      color: #fff;
-      transition: all ease-in 0.3s;
-    }
-  }
 }
+.inner > * {
+  cursor: pointer;
+}
+.inner .close {
+  position: absolute;
+  top: 2%;
+  right: 20%;
+  padding: 0.4em;
+  border-radius: 30%;
+}
+.inner .close:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all ease-in 0.3s;
+}/*# sourceMappingURL=style.css.map */
