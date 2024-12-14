@@ -10,7 +10,7 @@ Task
 8. Create a button that moves box randomly to a new position every time you click over it.
 9. Implement a "like" counter for a button that increments the count displayed next to it.
 10. Create a mouse follower
-
+11. ⁠Create a Hamburger menu animation
 12. ⁠Create a like feature similar to Instagram (jab image pr double click hoga to heart bada hoga)
 13. ⁠Make a "dark mode" button that toggles the background color of the page between black and white.
 14. ⁠Add a reset button to clear all text in a text area.
@@ -19,10 +19,12 @@ Task
 17. Display the current time in an element and update it every second.
 18. Rendering Card data
 19. Switching on button Click
-20. Event KeyAction
+20. Event Key Action
 21. WhatsApp Status
 22. Download Scrollbar
 23. Instagram
-
-11. ⁠Create a Hamburger menu animation
-
+24. Features Case Study querySelectorAll
+25. Swap Images
+26. Create Insects
+27. Bubble Game
+28. Analog Clock
